@@ -5,6 +5,7 @@
     all apps governed by this config. 
 */
 libraries{
-  //merge = true 
+  //merge = true
+  maven
   sonarqube
 }
