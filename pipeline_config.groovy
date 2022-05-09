@@ -5,7 +5,11 @@
     all apps governed by this config. 
 */
 libraries{
-  //merge = true
   maven
-  sonarqube
+}
+
+stages{
+    continuous_integration{
+        build
+    }
 }
