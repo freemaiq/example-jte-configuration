@@ -5,19 +5,15 @@
     all apps governed by this config. 
 */
 libraries{
-  maven
+  maven {
+    CONTAINER_REGISTRY = "docker-nexus.devops.weecover.io"
+    CODE_REPO = "https://github.com/WEECOVER/ms-konnectoren.git"
+    DEPLOY_REPO = "https://github.com/WEECOVER/plat-helm-deploy-konnectoren"
+  }
 }
 
 stages{
     continuous_integration{
         build
     }
-}
-
-keywords {
-  globals {
-    CONTAINER_REGISTRY = "docker-nexus.devops.weecover.io"
-    CODE_REPO = "https://github.com/WEECOVER/ms-konnectoren.git"
-    DEPLOY_REPO = "https://github.com/WEECOVER/plat-helm-deploy-konnectoren"
-  }
 }
