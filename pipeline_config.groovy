@@ -15,7 +15,9 @@ stages{
 }
 
 keywords {
-  CONTAINER_REGISTRY = "docker-nexus.devops.weecover.io"
-  CODE_REPO = "https://github.com/WEECOVER/ms-konnectoren.git"
-  DEPLOY_REPO = "https://github.com/WEECOVER/plat-helm-deploy-konnectoren"
+  globals {
+    CONTAINER_REGISTRY = "docker-nexus.devops.weecover.io"
+    CODE_REPO = "https://github.com/WEECOVER/ms-konnectoren.git"
+    DEPLOY_REPO = "https://github.com/WEECOVER/plat-helm-deploy-konnectoren"
+  }
 }
