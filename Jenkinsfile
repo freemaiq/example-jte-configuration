@@ -1,1 +1,4 @@
-continuous_integration()
+pipeline{
+    agent any
+    continuous_integration()
+}
