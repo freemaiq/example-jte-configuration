@@ -1,4 +1,8 @@
 pipeline{
     agent any
-    continuous_integration()
+    stages{
+        stage("continuous_integration)"{
+            build()
+        }
+    }
 }

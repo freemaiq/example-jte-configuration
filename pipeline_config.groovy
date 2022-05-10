@@ -11,9 +11,3 @@ libraries{
     DEPLOY_REPO = "https://github.com/WEECOVER/plat-helm-deploy-konnectoren"
   }
 }
-
-stages{
-    continuous_integration{
-        build
-    }
-}
