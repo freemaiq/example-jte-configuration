@@ -3,7 +3,9 @@ pipeline{
     stages{
         stage("continuous_integration"){
             steps {
-                build()
+                script { 
+                    build()
+                }
             }
         }
     }
