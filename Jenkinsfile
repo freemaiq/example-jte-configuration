@@ -8,5 +8,12 @@ pipeline{
                 }
             }
         }
+        stage("release"){
+            steps {
+                script{
+                    release()
+                }
+            }
+        }
     }
 }
